@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.generateReports">
+    <children>
+        <Button fx:id="monthTypeButton" layoutX="46.0" layoutY="25.0" mnemonicParsing="false" onAction="#monthTypeAction" text="View By Month and Type" />
+        <Button fx:id="contactButton" layoutX="247.0" layoutY="25.0" mnemonicParsing="false" onAction="#contactAction" text="View by Contact" />
+        <Button fx:id="appointmentLength" layoutX="383.0" layoutY="25.0" mnemonicParsing="false" onAction="#appointmentLengthAction" text="View By Appointment Length" />
+        <TextArea fx:id="reportWindow" editable="false" layoutX="35.0" layoutY="143.0" prefHeight="213.0" prefWidth="530.0" promptText="Choose a Report To Generate..." />
+        <Button fx:id="exitButton" layoutX="394.0" layoutY="360.0" mnemonicParsing="false" onAction="#exitAction" text="Back To Appointment View" />
+        <ComboBox fx:id="monthComboBox" layoutX="47.0" layoutY="77.0" onAction="#monthAction" prefWidth="150.0" visible="false" />
+        <ComboBox fx:id="typeComboBox" layoutX="225.0" layoutY="78.0" onAction="#typeAction" prefWidth="150.0" visible="false" />
+    </children>
+</AnchorPane>

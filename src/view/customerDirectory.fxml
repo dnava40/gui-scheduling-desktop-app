@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="403.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.customerDirectory">
+    <children>
+        <TableView fx:id="customerTable" layoutX="41.0" layoutY="58.0" prefHeight="287.0" prefWidth="753.0">
+            <columns>
+                <TableColumn fx:id="customerIdColumn" prefWidth="75.0" text="Customer ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="addressColumn" prefWidth="75.0" text="Address" />
+                <TableColumn fx:id="postalCodeColumn" prefWidth="75.0" text="Postal Code" />
+                <TableColumn fx:id="phoneNumberColumn" prefWidth="75.0" text="Phone #" />
+                <TableColumn fx:id="createTimeColumn" prefWidth="75.0" text="Created On" />
+                <TableColumn fx:id="createdByColumn" prefWidth="75.0" text="Created By" />
+                <TableColumn fx:id="lastUpdatedColumn" prefWidth="75.0" text="Last Update" />
+                <TableColumn fx:id="lastUpdatedByColumn" prefWidth="75.0" text="Updated By" />
+                <TableColumn fx:id="divisionIdColumn" prefWidth="75.0" text="Division ID" />
+            </columns>
+        </TableView>
+        <Button fx:id="modifyCustomerButton" layoutX="554.0" layoutY="356.0" mnemonicParsing="false" onAction="#modifyCustomerAction" text="Modify Customer" />
+        <Button fx:id="addCustomerButton" layoutX="443.0" layoutY="356.0" mnemonicParsing="false" onAction="#addCustomerAction" text="Add Customer" />
+        <Button fx:id="deleteCustomerButton" layoutX="677.0" layoutY="356.0" mnemonicParsing="false" onAction="#deleteCustomerAction" text="Delete Customer" />
+        <Button fx:id="backToAppointmentButton" layoutX="598.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToAppointmentAction" text="Back To Appointment Directory" />
+    </children>
+</AnchorPane>
